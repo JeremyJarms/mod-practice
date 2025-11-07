@@ -1,4 +1,10 @@
 {
   "item.practicemod.george": "George",
-  "item.practicemod.raw_george": "Raw George"
+  "item.practicemod.raw_george": "Raw George",
+
+  "block.practicemod.george_block": "Block of George",
+  "block.practicemod.raw_george_block": "Block of Raw George",
+
+  "creativetab.practicemod.george_items": "George Items",
+  "creativetab.practicemod.george_blocks": "George Blocks"
 }

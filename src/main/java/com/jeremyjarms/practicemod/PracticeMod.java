@@ -1,5 +1,7 @@
 package com.jeremyjarms.practicemod;
 
+import com.jeremyjarms.practicemod.block.ModBlocks;
+import com.jeremyjarms.practicemod.item.ModCreativeModeTabs;
 import com.jeremyjarms.practicemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,7 +32,10 @@ public class PracticeMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus); // Register mod creative tabs
+
+        ModItems.register(modEventBus); // Register mod items
+        ModBlocks.register(modEventBus); // Register mod blocks
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -48,6 +53,11 @@ public class PracticeMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GEORGE);
             event.accept(ModItems.RAW_GEORGE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.GEORGE_BLOCK);
+            event.accept(ModBlocks.RAW_GEORGE_BLOCK);
         }
     }
 
