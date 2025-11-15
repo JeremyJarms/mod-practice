@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GEORGE.get());
                         output.accept(ModItems.RAW_GEORGE.get());
 
+                        output.accept(ModItems.CHISEL.get());
 
                     }).build());
 
@@ -31,6 +32,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.GEORGE_BLOCK.get());
                         output.accept(ModBlocks.RAW_GEORGE_BLOCK.get());
+
+                        output.accept(ModBlocks.GEORGE_ORE.get());
+                        output.accept(ModBlocks.GEORGE_DEEPSLATE_ORE.get());
 
 
                     }).build());

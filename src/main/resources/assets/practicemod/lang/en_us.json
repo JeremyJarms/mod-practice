@@ -2,8 +2,12 @@
   "item.practicemod.george": "George",
   "item.practicemod.raw_george": "Raw George",
 
+  "item.practicemod.chisel": "Chisel",
+
   "block.practicemod.george_block": "Block of George",
   "block.practicemod.raw_george_block": "Block of Raw George",
+  "block.practicemod.george_ore": "George Ore",
+  "block.practicemod.george_deepslate_ore": "George Deepslate Ore",
 
   "creativetab.practicemod.george_items": "George Items",
   "creativetab.practicemod.george_blocks": "George Blocks"
