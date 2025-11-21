@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GEORGE_ORE.get());
                         output.accept(ModBlocks.GEORGE_DEEPSLATE_ORE.get());
 
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
 
                     }).build());
 

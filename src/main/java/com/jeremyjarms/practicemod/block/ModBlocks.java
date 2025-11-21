@@ -1,6 +1,7 @@
 package com.jeremyjarms.practicemod.block;
 
 import com.jeremyjarms.practicemod.PracticeMod;
+import com.jeremyjarms.practicemod.block.custom.MagicBlock;
 import com.jeremyjarms.practicemod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -37,7 +38,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3,6), BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
